@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAST.NET - Digital Marketing & Networking</title>
+    <title>FAST.NET - Solusi Jaringan & Digital Marketing</title>
     <style>
-        /* Desain UI Biru Putih yang Fresh */
+        /* Gaya Dasar & Warna Biru-Putih */
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; 
@@ -13,37 +13,41 @@
             background-color: #f4f7f6; 
             color: #333; 
         }
+
+        /* Header Abu-Abu Gelap agar Logo Putih Terlihat */
         header { 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
             padding: 15px 50px; 
-            background-color: #ffffff; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            background-color: #2b3035; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3); 
             position: sticky;
             top: 0;
             z-index: 100;
         }
+
         .logo img { 
-            height: 60px; /* Ukuran logo di pojok kiri atas */
+            height: 50px; 
             object-fit: contain;
         }
+
+        /* Navigasi Warna Putih */
         nav a { 
             margin: 0 15px; 
             text-decoration: none; 
-            color: #004080; 
+            color: #ffffff; 
             font-weight: 700; 
             font-size: 14px;
             letter-spacing: 1px;
             transition: color 0.3s; 
         }
         nav a:hover { color: #0073e6; }
-        
-        /* Hero Section dengan Background Kota */
+
+        /* Hero Section dengan Background Kota Modern */
         .hero { 
             text-align: center; 
-            padding: 120px 20px; 
-            /* Menggunakan gambar dummy kota dari Unsplash, bisa kamu ganti linknya */
+            padding: 100px 20px; 
             background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover; 
             position: relative; 
             color: white; 
@@ -52,7 +56,7 @@
             content: ''; 
             position: absolute; 
             top: 0; left: 0; right: 0; bottom: 0; 
-            background: rgba(0, 31, 63, 0.85); /* Overlay Biru Gelap agar tulisan terbaca */
+            background: rgba(0, 31, 63, 0.8); 
         }
         .hero-content { 
             position: relative; 
@@ -61,24 +65,16 @@
             margin: 0 auto;
         }
         .hero-content img { 
-            max-width: 350px; /* Ukuran logo besar di tengah */
+            max-width: 280px; 
             margin-bottom: 20px; 
-            filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
         }
-        .hero-content h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .hero-content p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-            color: #e0e0e0;
-        }
-        
-        /* Tombol */
+        .hero-content h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .hero-content p { font-size: 1.1em; margin-bottom: 30px; color: #d0d0d0; }
+
+        /* Tombol Aksi */
         .btn { 
             display: inline-block; 
-            padding: 12px 30px; 
+            padding: 12px 25px; 
             margin: 10px; 
             background-color: #0073e6; 
             color: white; 
@@ -88,8 +84,26 @@
             transition: 0.3s;
         }
         .btn:hover { background-color: #0059b3; }
-        .btn-wa { background-color: #25D366; } /* Warna hijau khas WA */
+        .btn-wa { background-color: #25D366; }
         .btn-wa:hover { background-color: #1ebe5d; }
+
+        /* Pengaturan untuk Tampilan HP (Mobile) */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            nav {
+                margin-top: 15px;
+                text-align: center;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+                font-size: 12px;
+            }
+            .hero-content h1 { font-size: 1.8em; }
+        }
     </style>
 </head>
 <body>

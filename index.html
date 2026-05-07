@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST.NET - Digital Marketing & Networking</title>
+    <style>
+        /* Desain UI Biru Putih yang Fresh */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f7f6; 
+            color: #333; 
+        }
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 50px; 
+            background-color: #ffffff; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo img { 
+            height: 60px; /* Ukuran logo di pojok kiri atas */
+            object-fit: contain;
+        }
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #004080; 
+            font-weight: 700; 
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: color 0.3s; 
+        }
+        nav a:hover { color: #0073e6; }
+        
+        /* Hero Section dengan Background Kota */
+        .hero { 
+            text-align: center; 
+            padding: 120px 20px; 
+            /* Menggunakan gambar dummy kota dari Unsplash, bisa kamu ganti linknya */
+            background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover; 
+            position: relative; 
+            color: white; 
+        }
+        .hero::before { 
+            content: ''; 
+            position: absolute; 
+            top: 0; left: 0; right: 0; bottom: 0; 
+            background: rgba(0, 31, 63, 0.85); /* Overlay Biru Gelap agar tulisan terbaca */
+        }
+        .hero-content { 
+            position: relative; 
+            z-index: 1; 
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero-content img { 
+            max-width: 350px; /* Ukuran logo besar di tengah */
+            margin-bottom: 20px; 
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.2));
+        }
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+        
+        /* Tombol */
+        .btn { 
+            display: inline-block; 
+            padding: 12px 30px; 
+            margin: 10px; 
+            background-color: #0073e6; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #0059b3; }
+        .btn-wa { background-color: #25D366; } /* Warna hijau khas WA */
+        .btn-wa:hover { background-color: #1ebe5d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo-fastnet.jpg" alt="FAST.NET Logo">
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="https://billing-sistem.my.id/lapor.php">SERVICES</a>
+            <a href="http://billing-sistem.my.id/registrasi.php">REGISTRASI</a>
+            <a href="about.html">ABOUT</a>
+            <a href="https://wa.me/6283815875235" target="_blank">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="logo-fastnet.jpg" alt="FAST.NET Main Logo">
+            <h1>Solusi Cerdas untuk Kebutuhan Jaringan Anda</h1>
+            <p>Terhubung lebih cepat, lebih stabil, dan lebih efisien bersama FAST.NET.</p>
+            
+            <a href="http://billing-sistem.my.id/registrasi.php" class="btn">Registrasi Sistem</a>
+            <a href="https://wa.me/6283815875235" target="_blank" class="btn btn-wa">Hubungi WhatsApp</a>
+        </div>
+    </section>
+
+</body>
+</html>
